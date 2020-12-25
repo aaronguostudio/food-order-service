@@ -13,11 +13,11 @@ import java.util.Optional;
 public class CategoryServiceImpl implements CategoryService {
 
   @Autowired
-  private ProductCategoryRepository repository;
+  private ProductCategoryRepository repo;
 
   @Override
   public ProductCategory findOne(Integer categoryId) {
-    Optional<ProductCategory> p = repository.findById(categoryId);
+    Optional<ProductCategory> p = repo.findById(categoryId);
     if (p.isPresent()) {
       return p.get();
     }
@@ -26,16 +26,16 @@ public class CategoryServiceImpl implements CategoryService {
 
   @Override
   public List<ProductCategory> findAll() {
-    return repository.findAll();
+    return repo.findAll();
   }
 
   @Override
   public List<ProductCategory> findByCategoryByTypeIn(List<Integer> categoryTypeList) {
-    return repository.findByCategoryTypeIn(categoryTypeList);
+    return repo.findByCategoryTypeIn(categoryTypeList);
   }
 
   @Override
   public ProductCategory save(ProductCategory productCategory) {
-    return repository.save(productCategory);
+    return repo.save(productCategory);
   }
 }
