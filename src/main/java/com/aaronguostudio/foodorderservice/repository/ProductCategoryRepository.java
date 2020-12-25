@@ -1,5 +1,6 @@
-package com.aaronguostudio.foodorderservice.dataobject;
+package com.aaronguostudio.foodorderservice.repository;
 
+import com.aaronguostudio.foodorderservice.dataobject.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

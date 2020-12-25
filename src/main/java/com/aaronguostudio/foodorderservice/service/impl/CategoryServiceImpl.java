@@ -1,7 +1,7 @@
 package com.aaronguostudio.foodorderservice.service.impl;
 
 import com.aaronguostudio.foodorderservice.dataobject.ProductCategory;
-import com.aaronguostudio.foodorderservice.dataobject.ProductCategoryRepository;
+import com.aaronguostudio.foodorderservice.repository.ProductCategoryRepository;
 import com.aaronguostudio.foodorderservice.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
